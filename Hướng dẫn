@@ -1,0 +1,24 @@
+Tên đề tài :Ứng dụng thị giác máy tính trong phân loại rác sử dụng yolov8/yolov26n
+
+Vào terminal
+Tải:
+ python -m pip install label-studio
+Chạy
+python -m label_studio.server start --username Ph10650 --password hieu2005
+Mở cho mọi người cùng chạy
+python -m label_studio.server start --host 0.0.0.0 --port 8081
+
+Lưu ý : phải đúng số class và thứ tự các class
+
+Xác định các class: mỗi cái 600 ảnh
+
+ giấy ,vỏ bim bim ,túi li nong , khẩu trang
+rau , củ quả , trứng , lá cây
+ Bìa , chai nhựa, nắp chai ,lon, vỏ sữa
+ Pin ,kim tiêm , nhiệt kế , bóng đèn
+
+2 model
+yolo v8: Thái ,chi , khang _8000 ảnh
+yolo 26 : Hiếu
+
+mask - trashdetaction , Face Mask Detection
